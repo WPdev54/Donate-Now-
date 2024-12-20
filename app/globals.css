@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+/* nprogress.css */
+#nprogress .bar {
+    background: #29d;
+    height: 4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1031;
+}
+
+#nprogress .peg {
+    box-shadow:
+        0 0 10px #29d,
+        0 0 5px #29d;
+}
+
+#nprogress .spinner {
+    display: none;
+}
+
+#nprogress .spinner-icon {
+    border-top: 2px solid #29d;
+    border-left: 2px solid #29d;
+}
